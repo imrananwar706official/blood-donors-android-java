@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_my_details"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/pad_bot_user"
+android:paddingLeft="@dimen/pad_Left_user"
+android:paddingRight="@dimen/pad_Right_user"
+android:paddingTop="@dimen/pad_top_user"
+tools:context="com.example.imran.blooddonors.Searchview"
+android:background="@drawable/gradient">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/txtUser"
+        android:id="@+id/txtBldtype"
+        android:layout_marginTop="@dimen/txtBldMarginTop"
+        android:layout_below="@+id/txtname"
+        android:text="@string/txtBld"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/txtUser"
+        android:id="@+id/txtphone"
+        android:layout_marginTop="@dimen/txtphoneMargintop"
+        android:layout_below="@+id/txtBldtype"
+        android:text="@string/txtphone"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/txtUser"
+        android:id="@+id/txtcity"
+        android:layout_marginTop="@dimen/txtcityMargintop"
+        android:layout_below="@+id/txtphone"
+        android:text="@string/txtcity"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/txtUser"
+        android:id="@+id/txtname"
+        android:layout_marginTop="@dimen/txtName_margin_top"
+        android:text="@string/txtName"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/txtNameSize"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/btnMarginLeftCall"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/callbutt"
+        android:background="@drawable/btncustom"
+        android:layout_marginTop="@dimen/btnCallmarginTop"
+        android:layout_below="@+id/txtcity"
+        android:text="@string/btnCall"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/btnMarginLeftCancel"
+        android:layout_marginTop="@dimen/cancelbtnmarginTop"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cancelbutt"
+        android:background="@drawable/btncustom"
+        android:layout_below="@+id/callbutt"
+        android:text="@string/btnCancel"/>
+
+
+
+
+
+
+</RelativeLayout>

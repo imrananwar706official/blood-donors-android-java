@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient">
+
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtRegAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Add Donor"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/registrationTxtSize"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editNameAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/editNameMarginTop"
+            android:backgroundTint="@color/app_name"
+            android:ems="10"
+            android:hint="@string/editNameHint"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/editNametxtSize" />
+
+        <TextView
+            android:id="@+id/txtGenAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/txtGenMarginTop"
+            android:text="@string/genderTxt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtGenderSize" />
+
+
+
+            <RadioGroup
+                android:id="@+id/radioGenAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <RadioButton
+
+                    android:id="@+id/radioButtonmAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:layout_marginStart="@dimen/radioBtnMarginLeft"
+                    android:layout_marginTop="@dimen/radioBtnMarginTop"
+                    android:text="@string/radio_male"
+                    android:textSize="@dimen/radioBtnTxtSize" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonfAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:layout_marginStart="@dimen/radioBtnMarginLeft"
+                    android:layout_marginTop="@dimen/radioBtnMarginTop"
+                    android:text="@string/radio_female"
+                    android:textSize="@dimen/radioBtnTxtSize" />
+
+
+            </RadioGroup>
+
+
+
+
+        <EditText
+            android:id="@+id/editEmailAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/app_name"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/editNametxtSize" />
+
+        <EditText
+            android:id="@+id/editPassAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/app_name"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/editNametxtSize" />
+
+
+        <EditText
+            android:id="@+id/editContAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/contact_backgroundTint"
+            android:backgroundTint="@color/app_name"
+            android:ems="10"
+            android:maxLength="11"
+            android:hint="@string/contact_no"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textColor="@color/conEditTextColor"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/contEditSize" />
+
+        <TextView
+            android:id="@+id/txtCity_regAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/txtCitymarginTop"
+            android:text="@string/txtcIty"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_citySize" />
+
+
+        <Spinner
+            android:id="@+id/spinnerCityAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spinnerCity_marginTop"
+            android:entries="@array/city_arrays"
+            android:textAlignment="center"
+            android:prompt="@string/blood_group" />
+
+
+        <TextView
+            android:id="@+id/txtBldgrpAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/txtBldGrpMargin_top"
+            android:text="@string/blood_grouptxt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtBldGrpSize" />
+
+
+        <Spinner
+            android:id="@+id/spinnerBlgAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spinner_Blg_marginTop"
+            android:entries="@array/blood_arrays"
+            android:prompt="@string/blood_group"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutdonor"
+            android:layout_below="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <CheckBox
+                android:id="@+id/donoruser_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="50"
+                android:checked="true"
+                android:text=""
+                android:textSize="@dimen/checkBoxTxtSize" />
+
+            <TextView
+                android:id="@+id/txtDonor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="130dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="50"
+                android:text="Donor"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtDonorSize" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddDonor"
+            android:layout_below="@id/layoutdonor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/registerBtnMarginLeft"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btncustom"
+            android:text="Add Donor"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/registerBtnTxtSize"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBarregAdmin"
+            android:layout_width="@dimen/progressBarRegWidth"
+            android:layout_height="@dimen/progressBarRegHeight"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+
+</RelativeLayout>
+
+</ScrollView>

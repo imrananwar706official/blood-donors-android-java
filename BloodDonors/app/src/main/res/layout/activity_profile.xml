@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.imran.blooddonors.Profile">
+
+
+    <TextView
+        android:id="@+id/txtProfname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/nameProfTxtMarginStart"
+        android:layout_marginTop="@dimen/nameProfTxtMarginTop"
+        android:text="@string/nameProfTxt"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bloodGrpTxtSize" />
+
+    <TextView
+        android:id="@+id/txtProfnameset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/nameSetprofMarginStart"
+        android:layout_marginTop="@dimen/nameSetprofMarginTop"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bloodGrpTxtSize" />
+
+    <TextView
+        android:id="@+id/txtProfBldId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/blood_groupTxtProfMarginStart"
+        android:layout_marginTop="@dimen/blood_groupTxtProfMarginTop"
+        android:text="@string/blood_groupTxtProf"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bloodGrpTxtSize" />
+
+    <TextView
+        android:id="@+id/txtProfBldIdset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/bloodSetTxtprofMarginStart"
+        android:layout_marginTop="@dimen/bloodSetTxtprofMarginTop"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bloodGrpTxtSize" />
+
+    <TextView
+        android:id="@+id/txtProfGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/genderTxtprofMarginStart"
+        android:layout_marginTop="@dimen/genderTxtprofMarginTop"
+        android:text="@string/genderTxtprof"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bloodGrpTxtSize" />
+
+    <TextView
+        android:id="@+id/txtProfGenderset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/genderSetProfTxtMarginStart"
+        android:layout_marginTop="@dimen/genderSetProfTxtMarginTop"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bloodGrpTxtSize" />
+
+    <TextView
+        android:id="@+id/txtProfEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/emailProfTxtMarginStart"
+        android:layout_marginTop="@dimen/emailProfTxtMarginTop"
+        android:text="@string/emailProftxt"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bloodGrpTxtSize" />
+
+    <TextView
+        android:id="@+id/txtProfEmailset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/emailSetProfMarginStart"
+        android:layout_marginTop="@dimen/emailSetProfMarginTop"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bloodGrpTxtSize" />
+
+    <TextView
+        android:id="@+id/txtProfCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/cityTxtProfMarginStart"
+        android:layout_marginTop="@dimen/cityTxtProfMarginTop"
+        android:text="@string/cityTxtProf"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bloodGrpTxtSize" />
+
+    <TextView
+        android:id="@+id/txtProfCityset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/CitysetTxtMarginStart"
+        android:layout_marginTop="@dimen/CitysetTxtMarginTop"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bloodGrpTxtSize" />
+
+
+
+    <Button
+        android:id="@+id/changePass"
+        android:text="@string/change_password"
+        android:textSize="@dimen/btnchangepassTxtSize"
+        android:textAllCaps="false"
+        android:layout_marginRight="@dimen/btnchangepassMarginRight"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btncustom"
+        android:layout_marginTop="@dimen/btnchangepassMarginTop"
+        android:layout_below="@+id/txtProfEmail"/>
+
+    <ProgressBar
+        android:id="@+id/profProg"
+        android:layout_width="@dimen/profProgWidth"
+        android:layout_height="@dimen/profProgHeight"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

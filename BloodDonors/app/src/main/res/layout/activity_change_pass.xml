@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.imran.blooddonors.ChangePass">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_password"
+        android:textSize="@dimen/chngPassTxtTitleSize"
+        android:layout_marginLeft="@dimen/chngPassTxtMarginLeft"
+        android:layout_marginTop="@dimen/chngPassTxtMarginTop"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass_changeOld"
+        android:layout_marginTop="@dimen/edtTxtOldPassMarginTop"
+        android:layout_marginLeft="@dimen/edtTxtOldPassMarginLeft"
+        android:layout_marginRight="@dimen/edtTxtOldPassMarginRight"
+        android:backgroundTint="@color/white"
+        android:hint="@string/enter_old_password_hint"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass_changeNew"
+        android:layout_marginTop="@dimen/edtTxtNewPassMarginTop"
+        android:layout_marginLeft="@dimen/edtTxtNewPassMarginLeft"
+        android:layout_marginRight="@dimen/edtTxtNewPassMarginRight"
+        android:backgroundTint="@color/white"
+        android:hint="@string/enter_new_password_hint"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnChangPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass_changeNew"
+        android:background="@drawable/btncustom"
+        android:text="@string/change_password"
+        android:textSize="@dimen/btnChangePassTxtSize"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginLeft="@dimen/btnChangePassMarginLeft"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/btnChangePassMarginTop"/>
+
+    <ProgressBar
+        android:layout_width="@dimen/progressChangePassWidth"
+        android:layout_height="@dimen/progressChangePassHeight"
+        android:layout_centerInParent="true"
+        android:id="@+id/changPasprog"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context="com.example.imran.blooddonors.ResetPass">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/imgvMarginTop"
+        android:layout_marginBottom="@dimen/imgMarginBottom"
+        android:src="@mipmap/ico_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/txtFgtTitlePadding"
+        android:text="@string/lbl_forgot_password"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/txtFgtMsgMarginBottom"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/forgot_password_msg"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/emailForgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edtTxtForgotMarginBottom"
+        android:layout_marginTop="@dimen/edtTxtForgotMarginTop"
+        android:layout_marginRight="@dimen/edtTxtForgotMarginRight"
+        android:layout_marginLeft="@dimen/edtTxtForgotMarginLeft"
+        android:textAlignment="center"
+        android:hint="@string/hint_email"
+        android:backgroundTint="@color/white"
+        android:textSize="@dimen/edtForgotTxtSize"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/btn_reset_password"
+        android:layout_width="@dimen/btnResetPassWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btnResetPassMarginTop"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btncustom"
+        android:text="@string/btn_reset_password"
+        android:textAllCaps="false"
+        android:textSize="@dimen/btnResetPassTxtSize"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/btnBackWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/btnBackMarginTop"
+        android:background="@drawable/btncustom"
+        android:textAllCaps="false"
+        android:text="@string/btn_back"
+        android:textSize="@dimen/btnBacktxSize"
+        android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/progressReseWidth"
+        android:layout_height="@dimen/progressReseHeight"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

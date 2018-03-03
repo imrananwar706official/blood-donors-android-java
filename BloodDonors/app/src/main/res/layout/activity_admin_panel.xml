@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.imran.blooddonors.AdminPanel">
+
+
+    <TextView
+    android:id="@+id/txtAdminPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Admin Panel"
+    android:textColor="@color/white"
+    android:textSize="35dp"
+    android:layout_marginTop="15dp"
+    android:textAlignment="center"/>
+
+
+
+    <Button
+        android:id="@+id/btnAdminPanelSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAdminPanel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/btnLoginMarginTop"
+        android:layout_marginLeft="@dimen/btnLoginMarginLeft"
+        android:background="@drawable/btncustom"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="@color/app_name"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAdminPanelAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAdminPanelSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/btnLoginMarginTop"
+        android:layout_marginLeft="@dimen/btnLoginMarginLeft"
+        android:background="@drawable/btncustom"
+        android:text="Add Donor"
+        android:textAllCaps="false"
+        android:textColor="@color/app_name"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnAdminPanelLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAdminPanelAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/btnLoginMarginTop"
+        android:layout_marginLeft="@dimen/btnLoginMarginLeft"
+        android:background="@drawable/btncustom"
+        android:text="Log out"
+        android:textAllCaps="false"
+        android:textColor="@color/app_name"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+
+
+</RelativeLayout>
